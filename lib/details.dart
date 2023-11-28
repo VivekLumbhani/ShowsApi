@@ -53,7 +53,7 @@ class _detailsOfShowState extends State<detailsOfShow> {
       ),
       body: Container(
         child: FutureBuilder(
-          // Assuming you have a Map type for mapstrresp
+
           future: apicall(widget.id),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
@@ -87,7 +87,7 @@ class _detailsOfShowState extends State<detailsOfShow> {
                           icon: Icon(Icons.play_arrow,
                               size: 50, color: Colors.red),
                           onPressed: () {
-                            // Handle play button click
+
                           },
                         ),
                       ),
